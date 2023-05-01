@@ -1,6 +1,6 @@
 //timer and setup
 window.onload=function(){
-  var count = 2;
+  var count = 5;
   var id = setInterval(function(){
     count--;
     document.querySelector('#timer').textContent=count;
