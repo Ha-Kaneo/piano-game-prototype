@@ -16,7 +16,7 @@ const song = {
   songTitle: "Twinkle Twinkle Little Star",
   hand: "right",
   songLength: "16",
-  time: "20",
+  time: "23",
   position1: {
       sound1: {
           tone: "C",
@@ -121,8 +121,8 @@ var scoreNo = 1;
 var countTime = 0;
 var id = setInterval(function(){
   countTime++;
-  if (countTime <= 2) {  
-  }else if (2 < countTime & scoreNo <= songLength){
+  if (countTime <= 5) {  
+  }else if (5 < countTime & scoreNo <= songLength){
     var score = song["position" + scoreNo];
     for(var elem in score){
       var scene = document.querySelector('a-scene');
